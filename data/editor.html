@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<style type="text/css" media="all">
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+						height: 100%;
+				position: relative;
+			}
+
+			.text-editor {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+
+				margin: 28px 6px 6px;
+				padding: 2px;
+
+				border: 1px solid #d2d2d2;
+				border-radius: 3px;
+			}
+
+			.text-editor textarea {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				display: block;
+				height: 100%;
+				width: 100%;
+				resize: none;
+			}
+
+			.toolbar {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				height: 24px;
+				margin-right: 6px;
+				text-align: right;
+			}
+
+			.toolbar .toolbar__button {
+				position: relative;
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				margin: 6px 0 4px 2px;
+				border: 1px solid #d2d2d2;
+				background-color: #e5e5e5;
+				border-radius: 2px;
+				cursor: pointer;
+			}
+
+			.toolbar__button-image {
+				opacity: 0.7;
+			}
+
+			.toolbar__button-image:hover {
+				opacity: 0.9;
+			}
+
+			.toolbar .toolbar__button .toolbar__button-title {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+			}
+
+			.toolbar .toolbar__button .toolbar__button-title:hover::after {
+				content: attr(data-title);
+				position: absolute;
+				right: 120%;
+				top: 110%;
+				z-index: 1;
+				background: rgba(240,240,240,0.9);
+				padding: 3px 6px;
+				border: 1px solid #d2d2d2;
+				border-radius: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="toolbar">
+			<div class="toolbar__button" id="save">
+				<div class="toolbar__button-title" data-title="Save&nbsp;as...">
+					<img class="toolbar__button-image" src="imgs/save.png"/>
+				</div>
+			</div>
+			<div class="toolbar__button" id="options">
+				<div class="toolbar__button-title" data-title="Settings">
+					<img class="toolbar__button-image" src="imgs/settings.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="text-editor">
+			<textarea id="edit-box"></textarea>
+		</div>
+	</body>
+</html>

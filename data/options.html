@@ -1,0 +1,158 @@
+<html>
+	<head>
+		<style type="text/css" media="all">
+			html,
+			body {
+				font-size: 16px;
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			html,
+			body,
+			ul,li {
+				padding: 0;
+				margin: 0;
+			}
+			ul,li {
+				list-style: none;
+			}
+			.wrap,
+			.button,
+			.option,
+			.option input {
+				border: 1px solid #e2e2e2;
+				border-radius: 3px;
+			}
+			.wrap {
+				position: absolute;
+				top: 5px;
+				bottom: 5px;
+				right: 5px;
+				left: 5px;
+			}
+			.options {
+				padding: 20px;
+			}
+			.option {
+				padding: 20px 30px 15px;
+				margin: 0 0 10px;
+			}
+			label {
+				padding-right: 6px;
+				padding-left: 10px;
+			}
+			.option__first_label {
+				padding-left: 0px;
+			}
+			.option input {
+				padding: 4px;
+			}
+			.input_number {
+				width: 101px;
+			}
+			.buttons {
+				padding-right: 20px;
+				text-align: right;
+			}
+			.button {
+				display: inline-block;
+				padding: 4px 12px;
+				margin-left: 5px;
+				text-align: right;
+				background-color: #eeeeee;
+				cursor: pointer;
+				-moz-user-select: none;
+			}
+			.button:hover {
+				background-color: #e5e5e5;
+			}
+			.button:active {
+				background-color: #dddddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<ul class="options">
+				<li class="option">
+					<label class="option__first_label"for="btn">Shortcut:</label>
+					<select id="btn">
+						<option value = "a">A</option>
+						<option value = "b">B</option>
+						<option value = "c">C</option>
+						<option value = "d">D</option>
+						<option value = "e">E</option>
+						<option value = "f">F</option>
+						<option value = "g">G</option>
+						<option value = "h">H</option>
+						<option value = "i">I</option>
+						<option value = "g">G</option>
+						<option value = "k">K</option>
+						<option value = "l">L</option>
+						<option value = "m">M</option>
+						<option value = "n">N</option>
+						<option value = "o">O</option>
+						<option value = "p">P</option>
+						<option value = "q">Q</option>
+						<option value = "r">R</option>
+						<option value = "s">S</option>
+						<option value = "t">T</option>
+						<option value = "u">U</option>
+						<option value = "v">V</option>
+						<option value = "w">W</option>
+						<option value = "x">X</option>
+						<option value = "y">Y</option>
+						<option value = "z">Z</option>
+						<option value = "f1">F1</option>
+						<option value = "f2">F2</option>
+						<option value = "f3">F3</option>
+						<option value = "f4">F4</option>
+						<option value = "f5">F5</option>
+						<option value = "f6">F6</option>
+						<option value = "f7">F7</option>
+						<option value = "f8">F8</option>
+						<option value = "f9">F9</option>
+						<option value = "f10">F10</option>
+						<option value = "f11">F11</option>
+						<option value = "f12">F12</option>
+						<option value = "0">0</option>
+						<option value = "1">1</option>
+						<option value = "2">2</option>
+						<option value = "3">3</option>
+						<option value = "4">4</option>
+						<option value = "5">5</option>
+						<option value = "6">6</option>
+						<option value = "7">7</option>
+						<option value = "8">8</option>
+						<option value = "9">9</option>
+					</select>
+					<label for="ctrl">Ctrl</label><input type="checkbox" id="ctrl">
+					<label for="shift">Shift</label><input type="checkbox" id="shift">
+					<label for="alt">Alt</label><input type="checkbox" id="alt">
+				</li>
+				<li class="option">
+					<span class="option__first_label">Window size:</span>
+					<input class="input_number" type="number" id="w"> X <input class="input_number" type="number" id="h">
+				</li>
+				<li class="option">
+					<label class="option__first_label"for="position">Window position:</label>
+					<select id="position">
+						<option value = "top_left">Top Left</option>
+						<option value = "top_right">Top Right</option>
+						<option value = "bottom_left">Bottom Left</option>
+						<option value = "bottom_right">Bottom Right</option>
+					</select>
+				</li>
+			</ul>
+			<div class="buttons">
+                <div class="button" id="save">
+                    Save
+                </div>
+                <div class="button" id="cancel">
+                    Cancel
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

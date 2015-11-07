@@ -1,0 +1,283 @@
+{
+	"title": "ffNote",
+	"name": "ffnote",
+	"version": "0.0.2",
+	"description": "One notepad with autosave for all tabs. \nImport to text file and minimal customization availeble.",
+	"main": "index.js",
+	"author": {
+		"name": "yorisen",
+		"email" : "yorisen@yandex.ru",
+		"url" : "https://www.facebook.com/yorisen.ff"
+	},
+	"engines": {
+		"firefox": ">=38.0a1",
+		"fennec": ">=38.0a1"
+	},
+	"license": "MIT",
+	"icon": "resource://@ffnote-at-yorisen-dot-addons-dot-mozilla-dot-org/data/imgs/icon-32.png",
+	"icon64": "resource://@ffnote-at-yorisen-dot-addons-dot-mozilla-dot-org/data/imgs/icon-64.png",
+	"id": "ffnote@yorisen.addons.mozilla.org",
+	"preferences": [
+		{
+		    "name": "shortCut",
+		    "type": "menulist",
+		    "title": "Shortcut for show/hide ffNode",
+		    "value": "o",
+			"hidden": true,
+		    "options": [
+		        {
+		            "value": "a",
+		            "label": "A"
+		        },
+		        {
+		            "value": "b",
+		            "label": "B"
+		        },
+		        {
+		            "value": "c",
+		            "label": "C"
+		        },
+		        {
+		            "value": "d",
+		            "label": "D"
+		        },
+		        {
+		            "value": "e",
+		            "label": "E"
+		        },
+		        {
+		            "value": "f",
+		            "label": "F"
+		        },
+		        {
+		            "value": "g",
+		            "label": "G"
+		        },
+		        {
+		            "value": "h",
+		            "label": "H"
+		        },
+		        {
+		            "value": "i",
+		            "label": "I"
+		        },
+		        {
+		            "value": "j",
+		            "label": "J"
+		        },
+		        {
+		            "value": "k",
+		            "label": "K"
+		        },
+		        {
+		            "value": "l",
+		            "label": "L"
+		        },
+		        {
+		            "value": "m",
+		            "label": "M"
+		        },
+		        {
+		            "value": "n",
+		            "label": "N"
+		        },
+		        {
+		            "value": "o",
+		            "label": "O"
+		        },
+		        {
+		            "value": "p",
+		            "label": "P"
+		        },
+		        {
+		            "value": "q",
+		            "label": "Q"
+		        },
+		        {
+		            "value": "r",
+		            "label": "R"
+		        },
+		        {
+		            "value": "s",
+		            "label": "S"
+		        },
+		        {
+		            "value": "t",
+		            "label": "T"
+		        },
+		        {
+		            "value": "u",
+		            "label": "U"
+		        },
+		        {
+		            "value": "v",
+		            "label": "V"
+		        },
+		        {
+		            "value": "w",
+		            "label": "W"
+		        },
+		        {
+		            "value": "x",
+		            "label": "X"
+		        },
+		        {
+		            "value": "y",
+		            "label": "Y"
+		        },
+		        {
+		            "value": "z",
+		            "label": "Z"
+		        },
+		        {
+		            "value": "f1",
+		            "label": "F1"
+		        },
+		        {
+		            "value": "f2",
+		            "label": "F2"
+		        },
+		        {
+		            "value": "f3",
+		            "label": "F3"
+		        },
+		        {
+		            "value": "f4",
+		            "label": "F4"
+		        },
+		        {
+		            "value": "f5",
+		            "label": "F5"
+		        },
+		        {
+		            "value": "f6",
+		            "label": "F6"
+		        },
+		        {
+		            "value": "f7",
+		            "label": "F7"
+		        },
+		        {
+		            "value": "f8",
+		            "label": "F8"
+		        },
+		        {
+		            "value": "f9",
+		            "label": "F9"
+		        },
+		        {
+		            "value": "f10",
+		            "label": "F10"
+		        },
+		        {
+		            "value": "f11",
+		            "label": "F11"
+		        },
+		        {
+		            "value": "f12",
+		            "label": "F12"
+		        },
+		        {
+		            "value": "0",
+		            "label": "0"
+		        },
+		        {
+		            "value": "1",
+		            "label": "1"
+		        },
+		        {
+		            "value": "2",
+		            "label": "2"
+		        },
+		        {
+		            "value": "3",
+		            "label": "3"
+		        },
+		        {
+		            "value": "4",
+		            "label": "4"
+		        },
+		        {
+		            "value": "5",
+		            "label": "5"
+		        },
+		        {
+		            "value": "6",
+		            "label": "6"
+		        },
+		        {
+		            "value": "7",
+		            "label": "7"
+		        },
+		        {
+		            "value": "8",
+		            "label": "8"
+		        },
+		        {
+		            "value": "9",
+		            "label": "9"
+		        }
+		    ]
+		},
+		{
+		    "name": "isShift",
+			"title": "Use Shift in shortcut",
+			"type": "bool",
+			"hidden": true,
+		    "value": true
+		},
+		{
+		    "name": "isAlt",
+			"title": "Use Alt in shortcut",
+			"type": "bool",
+			"hidden": true,
+		    "value": false
+		},
+		{
+		    "name": "isAccel",
+			"title": "Use Ctrl(Cmd on Mac) in shortcut",
+			"type": "bool",
+			"hidden": true,
+		    "value": true
+		},
+		{
+		    "name": "width",
+			"title": "Window width",
+			"type": "integer",
+			"hidden": true,
+		    "value": 418
+		},
+		{
+		    "name": "height",
+			"title": "Window height",
+			"type": "integer",
+			"hidden": true,
+		    "value": 618
+		},
+		{
+			"name": "position",
+			"type": "menulist",
+			"title": "Window position",
+			"value": "top_right",
+			"hidden": true,
+			"options": [
+				{
+		            "value": "top_left",
+		            "label": "Top Left"
+		        },
+				{
+		            "value": "top_right",
+		            "label": "Top Right"
+		        },
+				{
+		            "value": "bottom_left",
+		            "label": "Bottom Left"
+		        },
+				{
+		            "value": "bottom_right",
+		            "label": "Bottom Right"
+		        }
+			]
+		}
+	]
+}
