@@ -1,8 +1,8 @@
 # ffNote 
 >Addon for firefox  
->Not supported in new versions of Firefox (57+)
->Development stopped because new versions (Firefox Quantum) lack the capacity to implement this extension
->Left it here for the story
+>Not supported in new versions of Firefox (57+) <br/>
+>Development stopped because new versions (Firefox Quantum) lack the capacity to implement this extension <br/>
+>Left it here for the story <br/>
   
 One notepad with autosave for all tabs. Import to text file and minimal customization availeble.  
   
